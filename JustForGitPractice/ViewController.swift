@@ -17,17 +17,37 @@ class ViewController: UIViewController {
         label.textAlignment = .center
         return label
     }()
+    let label01: UILabel = {
+        let label = UILabel()
+        label.text = "Hi"
+        label.textColor = .darkText
+        label.backgroundColor = .systemGray4
+        label.textAlignment = .center
+        return label
+    }()
+    let label02: UILabel = {
+        let label = UILabel()
+        label.text = "Hi"
+        label.textColor = .darkText
+        label.backgroundColor = .systemGray4
+        label.textAlignment = .center
+        return label
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         // main branch first commit
         // branch 01 commit
         view.addSubview(label)
+        view.addSubview(label01)
+        view.addSubview(label02)
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        label.frame = CGRect(x: (UIScreen.main.bounds.width - 100)/2, y: (UIScreen.main.bounds.height - 40)/2, width: 100, height: 40)
+        label.frame = CGRect(x: (UIScreen.main.bounds.width)/2 - 50, y: 100, width: 100, height: 40)
+        label01.frame = CGRect(x: (UIScreen.main.bounds.width)/2 - 50, y: 150, width: 100, height: 40)
+        label02.frame = CGRect(x: (UIScreen.main.bounds.width)/2 - 50, y: 200, width: 100, height: 40)
     }
 
 
