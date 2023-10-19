@@ -35,9 +35,6 @@ class ViewController: UIViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        // main branch first commit
-        // branch 01 commit
         view.addSubview(label)
         view.addSubview(label01)
         view.addSubview(label02)
